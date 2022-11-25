@@ -1,0 +1,5 @@
+<launch>
+    
+    <include file="$(find robot_006)/robot_006_2dnav/launch/robot_006_move_base.launch"/>
+    
+</launch>

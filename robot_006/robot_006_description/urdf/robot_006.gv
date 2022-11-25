@@ -1,0 +1,26 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"left_wheel_01_link" [label="left_wheel_01_link"];
+"left_wheel_02_link" [label="left_wheel_02_link"];
+"left_wheel_03_link" [label="left_wheel_03_link"];
+"lidar_link" [label="lidar_link"];
+"right_wheel_01_link" [label="right_wheel_01_link"];
+"right_wheel_02_link" [label="right_wheel_02_link"];
+"right_wheel_03_link" [label="right_wheel_03_link"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "Left_wheel_01_link" [label="xyz: -0.18382 0.21 0 \nrpy: 1.6176 -0 -3.14159"]
+"Left_wheel_01_link" -> "left_wheel_01_link"
+"base_link" -> "Left_wheel_02_link" [label="xyz: -0.18382 0 0 \nrpy: 2.4353 -4.23516e-22 3.14159"]
+"Left_wheel_02_link" -> "left_wheel_02_link"
+"base_link" -> "Left_wheel_03_link" [label="xyz: -0.18382 -0.21 0 \nrpy: 1.6982 -0 -3.14159"]
+"Left_wheel_03_link" -> "left_wheel_03_link"
+"base_link" -> "Lidar_link" [label="xyz: 0 0 0 \nrpy: -3.14159 -4.23516e-22 1.5708"]
+"Lidar_link" -> "lidar_link"
+"base_link" -> "Right_wheel_01_link" [label="xyz: 0.18382 0.21 0 \nrpy: 1.5708 -0 0"]
+"Right_wheel_01_link" -> "right_wheel_01_link"
+"base_link" -> "Right_wheel_02_link" [label="xyz: 0.18382 0 0 \nrpy: 1.5708 -0 0"]
+"Right_wheel_02_link" -> "right_wheel_02_link"
+"base_link" -> "Right_wheel_03_link" [label="xyz: 0.18382 -0.21 0 \nrpy: 1.3303 -0 0"]
+"Right_wheel_03_link" -> "right_wheel_03_link"
+}
